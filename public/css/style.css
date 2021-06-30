@@ -1,0 +1,55 @@
+body {
+  background: linear-gradient(0.375turn, #041c82, #00122b, #440784);
+  /* background: url("test.JPG"); */
+  /* color: white; */
+  font-family: "Roboto", sans-serif;
+}
+nav {
+  padding: 2% 7% !important;
+}
+hr {
+  border: 1px solid white;
+}
+
+#hunt-form-layout {
+  padding: 13% 7%;
+  width: 100%;
+}
+
+.hunt-form {
+  background-color: aliceblue;
+  border-radius: 30px;
+  padding: 5% 15%;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 2px 5px azure;
+}
+.hunt-form-block {
+  float: left;
+  margin: 10px 0;
+}
+.hunt-form-label {
+  text-align: center;
+}
+
+input,
+label {
+  display: block;
+  border-radius: 8px;
+}
+
+/* Footer CSS */
+footer {
+  color: white;
+}
+
+.footer-item {
+  text-align: left;
+  padding-bottom: 2%;
+}
+
+.footer-icon {
+  color: #fff;
+  text-align: center;
+  padding: 2%;
+  margin-bottom: 0%;
+}

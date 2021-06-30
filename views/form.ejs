@@ -10,41 +10,62 @@
     </div>
 <% } %>
 
-
-<h1>Fill the form to get registered for Developers Hunt 2021</h1>
-<form action="/formdata1" method="POST">
-    <label for="name">Full Name </label>
-    <input type="text" name="stud_name" placeholder="Name" required autofocus>
-    <br>
-    <label for="dob">DOB </label>
-    <input type="date" name="stud_dob" placeholder="DOB" required>
-    <br>
-    <label for="wp_no">WhatsApp No. </label>
-    <input type="number" name="stud_wp_num"  min="999999999" max="10000000000"placeholder="WhatsApp Number" required>
-    <br>
-    <label for="email">Email </label>
-    <input type="email" name="stud_email"  placeholder="Email" required>
-    <br>
-    <label for="department">Department </label>
-    <select name="stud_department">
-        <option value="CSE" >CSE</option>
-        <option value="IT">IT</option>
-        <option value="EN & TC">EN & TC</option>
-        <option value="MECH">MECH</option>
-        <option value="CIVIL">CIVIL</option>
-        <option value="AUTOMOBILE">AUTOMOBILE</option>
-      </select>
-    <br>
-    <label for="Year">Department Year </label>
-    <select name="stud_year">
-        <option value="FE">FE</option>
-        <option value="SE">SE</option>
-        <option value="TE">TE</option>
-        <option value="BE">BE</option>
-      </select>
-    <br>
-    <button type="submit">Submit</button>
-</form>
+<section id="hunt-form-layout">
+  <div class="row hunt-form">
+  <div class="col-lg-12 hunt-form-label"> 
+   <img class="w-100" src="/hunt.png" alt="Developers Hunt 2021">
+   <h4><strong>Contact Details</strong></h2>
+  </div>
+  <div class="col-lg-12 ">
+    <form action="/formdata1" method="POST">
+      <div class="hunt-form-block" style="margin-right: 5%;">
+        <label for="name">Full Name </label>
+      <input type="text" class="form-control" name="stud_name" placeholder="Name" required autofocus>
+      </div>
+      <div class="hunt-form-block">
+      <label for="email">Email </label>
+      <input type="email" class="form-control" name="stud_email"  placeholder="Email" required>
+      </div>
+      
+      <br style="clear:both;">
+      <div class="hunt-form-block">
+      <label for="dob">DOB </label>
+      <input type="date" class="form-control" name="stud_dob" placeholder="DOB" required>
+      </div>
+      <br style="clear:both;">
+      <div class="hunt-form-block">
+      <label for="wp_no">WhatsApp No. </label>
+      <input type="number" class="form-control" name="stud_wp_num"  min="999999999" max="10000000000"placeholder="WhatsApp Number" required>
+      </div>
+      <br style="clear:both;">
+      <div class="hunt-form-block">
+      <label for="department">Department </label>
+      <select name="stud_department" class="form-control">
+          <option value="CSE" >CSE</option>
+          <option value="IT">IT</option>
+          <option value="EN & TC">EN & TC</option>
+          <option value="MECH">MECH</option>
+          <option value="CIVIL">CIVIL</option>
+          <option value="AUTOMOBILE">AUTOMOBILE</option>
+        </select>
+      </div>
+      <br style="clear:both;">
+      <div class="hunt-form-block">
+      <label for="Year">Department Year </label>
+      <select name="stud_year" class="form-control">
+          <option value="FE">FE</option>
+          <option value="SE">SE</option>
+          <option value="TE">TE</option>
+          <option value="BE">BE</option>
+        </select>
+      </div>
+        <br style="clear:both;">
+      <center><button  class="btn btn-danger " type="submit">Submit</button></center>
+  </form>
+  
+  </div>
+  </div>
+</section>
 
 
 <%- include('footer'); -%>
