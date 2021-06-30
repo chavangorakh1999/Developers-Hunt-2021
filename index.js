@@ -120,7 +120,7 @@ app.post("/formdata1", async (req, res) => {
   });
   req.session.message = {
     type: "success",
-    message: 'Thank You '+stud_name+' successfully regestered Please Check your mailbox for Whatsaap group link'
+    message: 'Thank You '+stud_name+', You have successfully registered. We will mail you Whatsapp group link shortly'
   }
   res.redirect("/")
   }
